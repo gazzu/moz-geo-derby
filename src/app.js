@@ -81,9 +81,9 @@ var AppGEO = function() {
                         startPosition = new L.LatLng(position.coords.latitude, position.coords.longitude);
                         map.setView(startPosition, 16).addLayer(cloudmade);
                         
-                        showPOIonMap();
+                        me.showPOIonMap();
                         map.on('moveend', function(e) {
-                            showPOIonMap();
+                            me.showPOIonMap();
                         });
                         
                     });
